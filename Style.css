@@ -1,4 +1,6 @@
-body{
+/*body */
+
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,22 +8,22 @@ body{
     background: #202124;
 }
 
-a{
+a {
     text-decoration: none;
     cursor: pointer;
 }
 
-header{
+header {
     height: 60px;
     width: 100%;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: right;
 }
 
-header nav .nav-seccion-superior{
+header nav .nav-seccion-superior {
     width: 250px;
     height: auto;
     display: flex;
@@ -30,12 +32,12 @@ header nav .nav-seccion-superior{
     align-items: center;
 }
 
-.nav-seccion-superior a{
-    margin-right:10px;
+.nav-seccion-superior a {
+    margin-right: 25px;
     color: rgba(255, 255, 255, .87);
 }
 
-nav .nav-seccion-superior .icono-menu img{
+nav .nav-seccion-superior .icono-menu img {
     width: 25px;
     height: auto;
     background-image: none;
@@ -45,37 +47,40 @@ nav .nav-seccion-superior .icono-menu img{
     cursor: pointer;
     background-color: none;
     background-image: none;
+    padding-right: 15px;
+    filter: invert();
 }
 
-.icono-perfil img{
+.icono-perfil img {
     border-radius: 50%;
     width: 30px;
     cursor: pointer;
 }
 
+/* Main */
 
 main {
     margin-top: 50px;
     text-align: center;
 }
 
-main .logo{
-    width: 530px;
-    margin:0 auto;
-    margin-bottom: 25px;
-}
-
-main .logo img{
-    width: 350px;
-}
-
-main .boton{
+main .logo {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
-main .boton .botones{
+main .logo img {
+    width: 350px;
+}
+
+main .boton {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+main .boton .botones {
     width: 525px;
     border-radius: 100px;
     border: 1px solid #e1e2e6;
@@ -84,7 +89,7 @@ main .boton .botones{
     align-items: center;
 }
 
-main .boton .botones input{
+main .boton .botones input {
     height: 40px;
     border: none;
     width: 350px;
@@ -93,8 +98,8 @@ main .boton .botones input{
     pointer-events: fill;
 }
 
-main .boton .botones .microfono{
-    background-image:url(https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png);
+main .boton .botones .microfono {
+    background-image: url(https://freepngimg.com/thumb/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -103,8 +108,8 @@ main .boton .botones .microfono{
     cursor: pointer;
 }
 
-main .boton .botones .lupa{
-    background-image:url(https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png);
+main .boton .botones .lupa {
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -112,8 +117,8 @@ main .boton .botones .lupa{
     height: 18px;
 }
 
-main .boton .botones .camara{
-    background-image:url(https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg);
+main .boton .botones .camara {
+    background-image: url(https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -121,7 +126,7 @@ main .boton .botones .camara{
     height: 20px;
 }
 
-main .boton .botones{
+main .boton .botones {
     box-shadow: 0 1px 6px 0 #20212447;
 }
 
@@ -132,7 +137,7 @@ main .cuadros {
     height: auto;
 }
 
-main .cuadros .cuadrobuscar button{
+main .cuadros .cuadrobuscar button {
     background-color: #303134;
     border: 2px solid #303134;
     border-radius: 5px;
@@ -165,7 +170,7 @@ main .cuadros .cuadrosuerte button {
     cursor: pointer;
 }
 
-main .ofrecido .por{
+main .ofrecido .por {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,10 +182,58 @@ main .ofrecido .por{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main .ofrecido .por .google{
+main .ofrecido .por .google {
     padding: 0px 2px;
 }
 
-main .ofrecido .por .direccion{
+main .ofrecido .por .direccion {
     padding: 0px 2px;
+    color: #1a0dab;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+}
+
+
+footer .seccion {
+    bottom: 0;
+    display: flex;
+    border-bottom: 1px solid #303134;
+    padding: 0 20px;
+    list-style: none;
+    background-color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #e8eaed;
+    justify-content: space-between
+}
+
+footer .sc .scul {
+    border-bottom: 1px solid #3c4043;
+    list-style: none;
+    padding: 0px 20px;
+    background-color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #9aa0a6;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    line-height: 27px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #9aa0a6;
 }
