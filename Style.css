@@ -1,9 +1,13 @@
+/* fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 /*body */
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     background: #202124;
 }
@@ -23,6 +27,10 @@ header nav {
     justify-content: right;
 }
 
+header nav #enlacegmail:hover {
+    text-decoration: underline;
+}
+
 header nav .nav-seccion-superior {
     width: 250px;
     height: auto;
@@ -32,10 +40,15 @@ header nav .nav-seccion-superior {
     align-items: center;
 }
 
+header nav #imagenesgoogle:hover {
+    text-decoration: underline;
+}
+
 .nav-seccion-superior a {
     margin-right: 25px;
     color: rgba(255, 255, 255, .87);
 }
+
 
 nav .nav-seccion-superior .icono-menu img {
     width: 25px;
@@ -51,33 +64,46 @@ nav .nav-seccion-superior .icono-menu img {
     filter: invert();
 }
 
+.icono-perfil img:hover {
+    background-color: #9aa0a6;
+    border: 2px solid #171717;
+    width: 30px;
+    border-radius: 50%;
+}
+
 .icono-perfil img {
     border-radius: 50%;
     width: 30px;
     cursor: pointer;
 }
 
-/* Main */
+/* main */
 
 main {
     margin-top: 50px;
     text-align: center;
 }
 
-main .logo {
+main #logo {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
-main .logo img {
-    width: 350px;
+main #logo img {
+    width: 420px;
 }
+
 
 main .boton {
     width: 530px;
     margin: 0 auto;
     margin-bottom: 25px;
+}
+
+main .boton .botones:hover {
+    background-color: #171717;
+    border: 2px solid #171717;
 }
 
 main .boton .botones {
@@ -89,13 +115,26 @@ main .boton .botones {
     align-items: center;
 }
 
-main .boton .botones input {
+main .boton .botones #input-search:hover{
+    background-color: #171717;
+    border: 2px solid #171717;
+}
+
+main .boton .botones #input-search {
     height: 40px;
     border: none;
     width: 350px;
     outline: none;
     background: none;
     pointer-events: fill;
+}
+
+main .boton .botones .microfono:hover{
+    background-color: #9aa0a6;
+    border: 2px solid #171717;
+    border-radius: 70%;
+    width: 27px;
+    height: 27px;
 }
 
 main .boton .botones .microfono {
@@ -108,6 +147,7 @@ main .boton .botones .microfono {
     cursor: pointer;
 }
 
+
 main .boton .botones .lupa {
     background-image: url(https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png);
     background-repeat: no-repeat;
@@ -115,6 +155,14 @@ main .boton .botones .lupa {
     background-size: contain;
     width: 18px;
     height: 18px;
+}
+
+main .boton .botones .camara:hover {
+    background-color: #9aa0a6;
+    border: 2px solid #171717;
+    border-radius: 70%;
+    width: 27px;
+    height: 27px;
 }
 
 main .boton .botones .camara {
@@ -126,18 +174,23 @@ main .boton .botones .camara {
     height: 20px;
 }
 
-main .boton .botones {
+main .boton .botones:hover {
     box-shadow: 0 1px 6px 0 #20212447;
 }
 
-main .cuadros {
+main .btn-search {
     display: flex;
     justify-content: center;
     width: auto;
     height: auto;
 }
 
-main .cuadros .cuadrobuscar button {
+main .btn-search #search button:hover{
+    background-color: #171717;
+    border: 2px solid #171717;
+}
+
+main .btn-search #search button {
     background-color: #303134;
     border: 2px solid #303134;
     border-radius: 5px;
@@ -154,7 +207,12 @@ main .cuadros .cuadrobuscar button {
     user-select: none;
 }
 
-main .cuadros .cuadrosuerte button {
+main .btn-search #lucky button:hover{
+    background-color: #171717;
+    border: 2px solid #171717;
+}
+
+main .btn-search #lucky button {
     background-color: #303134;
     border: 1px solid #303134;
     border-radius: 2px;
@@ -168,6 +226,7 @@ main .cuadros .cuadrosuerte button {
     min-width: 50px;
     text-align: center;
     cursor: pointer;
+    user-select: none;
 }
 
 main .ofrecido .por {
@@ -191,7 +250,7 @@ main .ofrecido .por .direccion {
     color: #1a0dab;
 }
 
-/* Footer */
+/* footer */
 
 footer {
     width: 100%;
@@ -199,7 +258,6 @@ footer {
     bottom: 0;
     display: block;
 }
-
 
 footer .seccion {
     bottom: 0;
@@ -213,6 +271,7 @@ footer .seccion {
     color: #e8eaed;
     justify-content: space-between
 }
+
 
 footer .sc .scul {
     border-bottom: 1px solid #3c4043;
@@ -236,4 +295,32 @@ footer ul {
 footer ul li a {
     margin: 10px;
     color: #9aa0a6;
+}
+
+footer #sobregoogle:hover{
+    text-decoration: underline;
+}
+
+footer #publicidad:hover{
+    text-decoration: underline;
+}
+
+footer #negocios:hover{
+    text-decoration: underline;
+}
+
+footer #comofunciona:hover{
+    text-decoration: underline;
+}
+
+footer #privacidad:hover{
+    text-decoration: underline;
+}
+
+footer #condiciones:hover{
+    text-decoration: underline;
+}
+
+footer #preferencias:hover{
+    text-decoration: underline;
 }

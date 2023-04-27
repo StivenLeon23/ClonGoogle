@@ -10,15 +10,18 @@
 </head>
 
 <body>
+
+    <!-- header -->
     <header>
         <nav>
             <ul class="nav-seccion-superior">
                 <li>
-                    <a
+                    <a id="enlacegmail"
                         href="https://accounts.google.com/AddSession/signinchooser?hl=es-419&continue=https%3A%2F%2Fwww.google.com.co%2Fpreferences%3Fhl%3Des-419%26fg%3D1&ec=GAlAAQ&authuser=0&flowName=GlifWebSignIn&flowEntry=AddSession">Gmail</a>
                 </li>
                 <li>
-                    <a href="https://www.google.com.co/imghp?hl=es-419&ogbl">Imágenes</a>
+                    <a id="imagenesgoogle"
+                     href="https://www.google.com.co/imghp?hl=es-419&ogbl">Imágenes</a>
                 </li>
                 <li class="icono-menu">
                     <img
@@ -31,31 +34,35 @@
             </ul>
         </nav>
     </header>
+
+    <!-- main -->
     <main>
-        <section class="logo">
-            <img src="https://www.nicepng.com/png/full/441-4413205_google-logo.png">
+        
+        <section id="logo">
+            <img src="https://www.google.com/logos/doodles/2020/stay-and-play-at-home-with-popular-past-google-doodles-pac-man-2010-6753651837108775.2-2xa.gif">
         </section>
 
         <section class="boton">
             <div class="botones">
                 <span class="lupa"></span>
-                <input type="search" placeholder="Buscar en Google o escribir una URL" aria-activedescendant=""
-                    aria-expanded="true">
+                <input id="input-search" type="search" placeholder="Buscar en Google o escribir una URL" name="q">
                 <a class="microfono"
                     href="https://support.google.com/websearch/answer/2940021?hl=es-419&co=GENIE.Platform%3DAndroid"></a>
-                <a class="camara" href="https://lens.google/intl/es-419/"></a>
+                <a class="camara" 
+                    href="https://lens.google/intl/es-419/"></a>
             </div>
         </section>
 
-        <section class="cuadros">
-            <div class="cuadrobuscar">
+        <section class="btn-search">
+            <div id="search">
                 <button>Buscar con Google</button>
             </div>
 
-            <div class="cuadrosuerte">
+            <div class="cuadrosuerte" id="lucky">
                 <button>Me siento con suerte</button>
             </div>
         </section>
+
         <section class="ofrecido">
             <div class="por">
                 <p class="google">Ofrecido por Google en: </p>
@@ -64,8 +71,12 @@
                     (Latinoamerica)</a>
             </div>
         </section>
+
     </main>
+
+    <!-- footer -->
     <footer>
+        
         <section class="sc">
             <ul class="scul">
                 <li class="sculcol">
@@ -73,23 +84,28 @@
                 </li>
             </ul>
         </section>
+        
         <section class="seccion">
             <ul class="seccionsobrelistauno">
-                <li><a
+                <li><a id="sobregoogle"
                         href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre
                         Google</a></li>
-                <li><a
+                <li><a id="publicidad"
                         href="https://ads.google.com/intl/es-419_co/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
                 </li>
-                <li><a
+                <li><a id="negocios"
                         href="https://smallbusiness.withgoogle.com/intl/es-419_co/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=CO#!/">Negocios</a>
                 </li>
-                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></li>
+                <li><a id="comofunciona" 
+                    href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></li>
             </ul>
             <ul class="seccionsobrelistados">
-                <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
-                <li><a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
-                <li><a href="https://www.google.com.co/preferences?hl=es-419&fg=1">Preferencias</a></li>
+                <li><a id="privacidad" 
+                    href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a></li>
+                <li><a id="condiciones" 
+                    href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a></li>
+                <li><a id="preferencias" 
+                    href="https://www.google.com.co/preferences?hl=es-419&fg=1">Preferencias</a></li>
             </ul>
         </section>
 
