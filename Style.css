@@ -80,7 +80,7 @@ nav .nav-seccion-superior .icono-menu img {
 /* main */
 
 main {
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -91,7 +91,7 @@ main #logo {
 }
 
 main #logo img {
-    width: 420px;
+    width: 380px;
 }
 
 
